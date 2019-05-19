@@ -16,6 +16,16 @@ img{
 	    max-width: 100%;
     height: auto;
 }
+.logo{
+        padding: 10px;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+
+    float: right;
+    width: 170px;
+    margin: 30px 0 0 50px;
+    position: absolute;
+    height: 70px;
+}
 .vector{
 	height: 400px; background-size: 500px 500px; width: 400px; z-index: 100
 }
@@ -28,7 +38,7 @@ img{
 .first .aa{
 	padding: 150px 0px 50px 0px;
 }
-.second,.fourth,.sixth,.eigth,.tenth{
+.second,.fourth,.sixth,.eigth,.tenth,footer{
 	color: #fff;
 	padding: 50px 0px 50px 0px;
 }
@@ -94,6 +104,26 @@ img{
     border-top: 1px solid #BEBEBE;
 }
 
+.eleventh{
+    background: url(../img/FB_MIMA.jpg) 100% 0 no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 140%;
+    background-attachment: fixed;
+    height: 400px;
+    border-bottom: 1px solid #BEBEBE;
+    border-top: 1px solid #BEBEBE;
+    text-align: center;
+}
+
+.foot-fire{
+    background: url(../img/background.png) repeat;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+}
 
 /* Slider */
 .slick-slide {
@@ -219,4 +249,68 @@ img{
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #11111117; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav:hover{
+    background-color: #11111157;
+}
+.sidenav .navbar-nav{
+    position: absolute;
+    bottom: 20%;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 28px 8px 8px 50px !important;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  mix-blend-mode: exclusion;
+}
+.sidenav a:hover{
+    color: #fff;
+    mix-blend-mode: exclusion;
+}
+
+/* When you mouse over the navigation links, change their color */
+.closebtn:hover{
+  color: #f1f1f1;
+  mix-blend-mode: exclusion;
+}
+
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+    mix-blend-mode: exclusion;
+}
+.openbtn,.closebtn{
+    float: left;
+    width: 3%;
+    top: 45%;
+    position: fixed;
+    z-index: 1000;
+    mix-blend-mode: exclusion;
+    font-size: 100px;
+
 }

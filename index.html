@@ -11,6 +11,7 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 
@@ -18,7 +19,7 @@
 
 <body style="background-color: #000;">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 d-md-none d-sm-flex">
   <a class="navbar-brand ml-auto " href=""><img src="img/weber_shandwick_small_logo_new.png" alt="Firebell by Weber Shandwick"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -50,7 +51,40 @@
   </div>
 </nav>
 
+
+<div id="mySidenav" class="sidenav">
+  <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#howitworks">how it works <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#minimizingrisk">minimizing risk</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#theexperience">experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#thewho">the players</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#accolades">accolades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contactus">contact</a>
+      </li>
+
+    </ul>
+</div>
+
+
+<a href="javascript:void(0)"  class="openbtn" onclick="openNav()" style="color: #fff;"><i class="fa fa-caret-right"></i></a>
+
+  <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-caret-left"> </i></a>
+
 <section class="first" style="position: relative;" >
+<a href="#">
+<img class="logo" src="img/weber_shandwick_small_logo_new.png" alt="Firebell by Weber Shandwick"></a>
 	<div class="aa" style="background: url(img/bg_2.jpg) no-repeat center scroll; background-size: cover;" data-paroller-factor="0.5">
 	<div class="container">
 		<div class="row">
@@ -71,7 +105,7 @@
 			<div class="col-md-12 text-center" style="position: relative;">
 				<img  src="img/vector.png" class="text-center vector"  >
 			</div>
-					<h2 class="aa text-center " style="position: relative;    float: left;    top: 0%;    margin-top: -160px;    left: 50.5%;    transform: translate(-50%, -50%);    background-position: center 0px;">How It Works<br>Click to find</h2>
+					<h2 class="aa text-center " style="position: relative;    float: left;    top: 0%;    margin-top: -160px;    left: 50.5%;    transform: translate(-50%, -50%);    background-position: center 0px;">How It Works<br><i class="far fa-hand-pointer"></i></h2>
 		</div>
 
 		<div class="show">
@@ -114,16 +148,16 @@
 			<div class="col-md-12 text-center" style="position: relative;">
 				<img src="img/vector.png" class="text-center vector"  >
 			</div>
-					<h2 class="aa text-center " style="position: relative;    float: left;    top: 0%;    margin-top: -160px;    left: 50.5%;    transform: translate(-50%, -50%);    background-position: center 0px;">The Cost of Complacency</h2>
+					<h2 class="aa text-center " style="position: relative;    float: left;    top: 0%;    margin-top: -160px;    left: 50.5%;    transform: translate(-50%, -50%);    background-position: center 0px;">The Cost of Complacency<br><i class="far fa-hand-pointer"></i></h2>
 		</div>
 
 		<div class="show">
 			<h3 class="aa" >The Cost of Complacency</h3>
 			<div class="row">
-				<div class="col-md-6 aa"  data-paroller-factor="-0.34" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform 1s linear">
+				<div class="col-md-6 aa"  data-paroller-factor="-0.31" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform 1s linear">
 				<img src="img/FB_quote3.png" class="" alt="Copy">
 			</div>
-				<div class="col-md-6 aa" data-paroller-factor="0.3" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform 1s linear"> 
+				<div class="col-md-6 aa" data-paroller-factor="0.32" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform 1s linear"> 
 					 <p>
 					Driven by real-time social conversation, crises are costly to your reputation, profits, and growth. The vulnerability today is 
 						not limited to obvious catastrophes such as a plant explosion or product recall; rather, social media makes a crisis out of an 
@@ -147,7 +181,7 @@
 	<div class=""></div>
 </section>
 
-<section class="sixth">
+<section class="sixth" id="theexperience">
 	<div class="" style="padding: 50px;">
 		<div class="row" style="overflow: hidden;">
 			<div class="col-md-12 aa"  data-paroller-factor="-0.2" data-paroller-type="foreground" data-paroller-direction="vertical" data-paroller-transition="transform .1s linear" >
@@ -167,7 +201,7 @@
 	<div class="mima2-image"></div>
 </section>
 
-<section class="eigth">
+<section class="eigth" id="thewho">
 	<div class="" style="padding: 50px;">
 		<div class="row">
 			<div class="col-md-6 " >
@@ -190,7 +224,7 @@
 				<p>Firebell drills typically include a mix of the following roles within an organization:</p>	
 			</div>
 			<div class="col-md-6">
-				<img src="img/FB_quote1.png" class="aa" alt="Copy" data-paroller-factor="0.5" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform .2s linear">
+				<img src="img/FB_quote1.png" class="aa" alt="Copy" data-paroller-factor="0.1" data-paroller-type="foreground" data-paroller-direction="horizontal" data-paroller-transition="transform 1s linear">
 			</div>
 			
 		</div>
@@ -223,7 +257,7 @@
 			<div class="col-md-12 text-center" style="position: relative;">
 				<img src="img/vector.png" class="text-center vector"  >
 			</div>
-					<h2 class="aa text-center " style="position: relative;    float: left;    top: 0%;    margin-top: -160px;    left: 50.5%;    transform: translate(-50%, -50%);    background-position: center 0px;">Accolades</h2>
+					<h2 class="aa text-center " style="position: relative;    float: left;    top: 0%;    margin-top: -160px;    left: 50.5%;    transform: translate(-50%, -50%);    background-position: center 0px;">Accolades<br><i class="far fa-hand-pointer"></i></h2>
 		</div>
 
 		<div class="show">
@@ -251,6 +285,56 @@
 		</div>
 			</div>
 </section>
+
+<section class="eleventh">
+		<div class="foot-fire">
+			<img id="firebellFooter" src="img/firebell_logo.png" alt="Firebell Lockup Large">
+		</div>
+</section>
+
+<footer class="footer container" id="contactus" style="background-color: #fff; color: #000; border: 4px solid #111;">
+	<div class="row px-2">
+		<div class="col-md-12">
+			<h3>Contact us</h3>
+		</div>
+	</div>	
+	
+				<ul class="row px-5" >
+					<li class="col-md-3" style="padding: 10px;">
+						<p>
+						<strong>North America</strong><br />
+						<a href="mailto:dkrejci@webershandwick.com">David Krejci</a><br />
+						Executive Vice President, Digital<br />
+						T: 952-346-6158<br /><br />
+						</p>	
+					</li>
+					<li class="col-md-3" style="padding: 10px;">
+						<p>
+						<strong>EMEA</strong><br />
+						<a href="mailto:nadia.saint@webershandwick.com">Nadia Saint</a><br />
+						Head of Digital – EMEA Technology Practice<br />
+						T: +44 207 067 0620<br /><br />
+						</p>
+					</li>
+					<li class="col-md-3" style="background-color: #111; color: #f1f1f1; padding: 10px;">
+						<p>
+						<strong>Latin America</strong><br />
+						<a href="mailto:eschultz@webershandwick.com">Everton Schultz</a><br />
+						Digital Director, Latin America<br />
+						T: +55 11 3027 0203<br /><br />
+						</p>
+					</li>
+					<li class="col-md-3" style="background-color: #111; color: #f1f1f1; padding: 10px;">
+						<p>
+						<strong>Asia Pacific</strong><br />
+						<a href="mailto:tkim@webershandwick.com">Tyler Kim</a><br />
+						Head of Crisis Communications and Issues Management<br />
+						T: +82-2-6250-7007<br /><br />
+						</p>
+					</li>				
+				</ul>
+
+</footer>
 			
 
 	<!--================ jQuery first, then Popper.js, then Bootstrap JS =================-->
@@ -268,18 +352,41 @@
 	<script src="../a.vimeocdn.com/js/froogaloop2.minf8c3.html?3b8b9-1363980173"></script>
 	<!-- <script src="js/jquery.webticker.js" ></script>  -->
 	<script>
+$('.openbtn').hide();
+
+					$('#mySidenav').css("width","250px");
+					$('.closebtn').click(function(){
+					$('#mySidenav').css("width","0px");
+					$('.closebtn').hide("slow");
+					$('.openbtn').show("slow");
+				});
+
+				$('.openbtn').click(function(){
+					$('#mySidenav').css("width","250px");
+					$('.openbtn').hide("slow");
+					$('.closebtn').show("slow");
+				});
+
+				
+
+
+
+
 		$('.show').hide();
 		$(document).ready(function(){
 			$('.aa').paroller();
 		
 
 		$( ".clickme" ).click(function() {
+			$('.show').hide();
+			$('.clickme').show();
   $( this ).fadeOut( "slow", function() {
 
   $(this).next().fadeIn(1000);
   	
   });
 });
+
 
 
 			$('.customer-logos').slick({
