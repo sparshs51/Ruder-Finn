@@ -81,7 +81,7 @@
 <a href="javascript:void(0)"  class="openbtn" onclick="openNav()" style="color: #fff;"><i class="fa fa-caret-right"></i></a>
 
   <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-caret-left"> </i></a>
-
+<div class="main">
 <section class="first" style="position: relative;" >
 <a href="#">
 <img class="logo" src="img/weber_shandwick_small_logo_new.png" alt="Firebell by Weber Shandwick"></a>
@@ -291,7 +291,7 @@
 			<img id="firebellFooter" src="img/firebell_logo.png" alt="Firebell Lockup Large">
 		</div>
 </section>
-
+</div>
 <footer class="footer container" id="contactus" style="background-color: #fff; color: #000; border: 4px solid #111;">
 	<div class="row px-2">
 		<div class="col-md-12">
@@ -355,14 +355,20 @@
 $('.openbtn').hide();
 
 					$('#mySidenav').css("width","250px");
+					$('.main').css("margin-left","250px");
+					
 					$('.closebtn').click(function(){
 					$('#mySidenav').css("width","0px");
+					$('.main').css("margin-left","0");
+
+
 					$('.closebtn').hide("slow");
 					$('.openbtn').show("slow");
 				});
 
 				$('.openbtn').click(function(){
 					$('#mySidenav').css("width","250px");
+					$('.main').css("margin-left","250px");
 					$('.openbtn').hide("slow");
 					$('.closebtn').show("slow");
 				});

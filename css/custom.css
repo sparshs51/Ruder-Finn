@@ -3,11 +3,14 @@
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-
+ 
 }
 body{
 	margin-right: 0;
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.main{
+    transition: margin-left .5s;
 }
 a{
 	color: inherit;
