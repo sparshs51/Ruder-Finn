@@ -46,7 +46,7 @@ section{
 }
 }
 .first .aa{
-    
+
     padding: 100px 0px 50px 0px;
 }
 .main{
@@ -417,7 +417,7 @@ img{
         width: 0px;
     }
     .closebtn,.openbtn{
-        display: none;
+        display: none!important;
     }
 }
 
